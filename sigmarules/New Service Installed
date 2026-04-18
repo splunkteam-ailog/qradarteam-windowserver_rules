@@ -1,0 +1,10 @@
+title: Windows - New Service Installed
+id: 20000000-0008
+logsource:
+  product: windows
+  service: system
+detection:
+  selection:
+    EventID: 7045
+  condition: selection
+level: high
