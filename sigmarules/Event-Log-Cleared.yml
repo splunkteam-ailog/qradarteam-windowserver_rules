@@ -1,10 +1,25 @@
 title: Windows - Event Log Cleared
-id: 20000000-0006
+id: 9c1f1b4a-0006-4a00-8000-000000000006
+status: stable
+description: Detects clearing of the Windows Security event log.
+author: SOC
+date: 2026-04-18
+
 logsource:
   product: windows
   service: security
+
 detection:
   selection:
     EventID: 1102
   condition: selection
+
+falsepositives:
+  - Legitimate administrative maintenance
+  - Incident response activity
+
 level: high
+
+tags:
+  - attack.defense_evasion
+  - attack.t1070
