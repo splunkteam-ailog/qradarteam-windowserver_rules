@@ -1,0 +1,12 @@
+title: Windows - User Added To Admin Group
+id: 20000000-0005
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID:
+      - 4732
+      - 4756
+  condition: selection
+level: high
