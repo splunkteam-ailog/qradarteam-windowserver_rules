@@ -1,0 +1,10 @@
+title: Windows - Event Log Cleared
+id: 20000000-0006
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 1102
+  condition: selection
+level: high
