@@ -1,0 +1,10 @@
+title: Windows - New User Created
+id: 20000000-0004
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4720
+  condition: selection
+level: high
