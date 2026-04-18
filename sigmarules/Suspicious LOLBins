@@ -1,0 +1,14 @@
+title: Windows - Suspicious LOLBin Execution
+id: 20000000-0010
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    Image|endswith:
+      - '\certutil.exe'
+      - '\bitsadmin.exe'
+      - '\mshta.exe'
+      - '\rundll32.exe'
+  condition: selection
+level: medium
