@@ -1,0 +1,10 @@
+title: Windows - Scheduled Task Created
+id: 20000000-0007
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4698
+  condition: selection
+level: high
