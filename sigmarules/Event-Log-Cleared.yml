@@ -1,11 +1,11 @@
-title: Windows Failed Logon Attempt Test 4625 QRadar
-id: 11111111-2222-3333-4444-555555555555
+title: Windows Event Log Cleared
+id: 22222222-3333-4444-5555-666666666666
 status: experimental
 logsource:
     product: windows
     service: security
 detection:
-    failed_logon:
-        EventID: 4625
-    condition: failed_logon
-level: medium
+    selection:
+        EventID: 1102
+    condition: selection
+level: high
