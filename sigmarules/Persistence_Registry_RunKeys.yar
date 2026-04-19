@@ -1,3 +1,4 @@
+rule DataExfiltration_DNS_HTTP
 {
     meta:
         author      = "Farhad"
